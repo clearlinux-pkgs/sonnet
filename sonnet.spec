@@ -5,18 +5,18 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : sonnet
-Version  : 5.50.0
-Release  : 5
-URL      : https://download.kde.org/stable/frameworks/5.50/sonnet-5.50.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.50/sonnet-5.50.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.50/sonnet-5.50.0.tar.xz.sig
+Version  : 5.51.0
+Release  : 6
+URL      : https://download.kde.org/stable/frameworks/5.51/sonnet-5.51.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.51/sonnet-5.51.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.51/sonnet-5.51.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: sonnet-bin
-Requires: sonnet-lib
-Requires: sonnet-license
-Requires: sonnet-data
+Requires: sonnet-bin = %{version}-%{release}
+Requires: sonnet-data = %{version}-%{release}
+Requires: sonnet-lib = %{version}-%{release}
+Requires: sonnet-license = %{version}-%{release}
 BuildRequires : aspell-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
@@ -24,7 +24,7 @@ BuildRequires : buildreq-qmake
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(enchant)
 BuildRequires : pkgconfig(hunspell)
-BuildRequires : qtbase-dev qtbase-extras mesa-dev
+BuildRequires : qtbase-dev mesa-dev
 BuildRequires : zlib-dev
 
 %description
@@ -38,8 +38,8 @@ HSpell, Enchant, ASpell and HUNSPELL.
 %package bin
 Summary: bin components for the sonnet package.
 Group: Binaries
-Requires: sonnet-data
-Requires: sonnet-license
+Requires: sonnet-data = %{version}-%{release}
+Requires: sonnet-license = %{version}-%{release}
 
 %description bin
 bin components for the sonnet package.
@@ -56,10 +56,10 @@ data components for the sonnet package.
 %package dev
 Summary: dev components for the sonnet package.
 Group: Development
-Requires: sonnet-lib
-Requires: sonnet-bin
-Requires: sonnet-data
-Provides: sonnet-devel
+Requires: sonnet-lib = %{version}-%{release}
+Requires: sonnet-bin = %{version}-%{release}
+Requires: sonnet-data = %{version}-%{release}
+Provides: sonnet-devel = %{version}-%{release}
 
 %description dev
 dev components for the sonnet package.
@@ -68,8 +68,8 @@ dev components for the sonnet package.
 %package lib
 Summary: lib components for the sonnet package.
 Group: Libraries
-Requires: sonnet-data
-Requires: sonnet-license
+Requires: sonnet-data = %{version}-%{release}
+Requires: sonnet-license = %{version}-%{release}
 
 %description lib
 lib components for the sonnet package.
@@ -84,25 +84,25 @@ license components for the sonnet package.
 
 
 %prep
-%setup -q -n sonnet-5.50.0
+%setup -q -n sonnet-5.51.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536438632
-mkdir clr-build
+export SOURCE_DATE_EPOCH=1539620457
+mkdir -p clr-build
 pushd clr-build
 %cmake ..
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536438632
+export SOURCE_DATE_EPOCH=1539620457
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/sonnet
-cp COPYING.LIB %{buildroot}/usr/share/doc/sonnet/COPYING.LIB
+mkdir -p %{buildroot}/usr/share/package-licenses/sonnet
+cp COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/COPYING.LIB
 pushd clr-build
 %make_install
 popd
@@ -255,12 +255,12 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5SonnetCore.so.5
-/usr/lib64/libKF5SonnetCore.so.5.50.0
+/usr/lib64/libKF5SonnetCore.so.5.51.0
 /usr/lib64/libKF5SonnetUi.so.5
-/usr/lib64/libKF5SonnetUi.so.5.50.0
+/usr/lib64/libKF5SonnetUi.so.5.51.0
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_aspell.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_hunspell.so
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/sonnet/COPYING.LIB
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/sonnet/COPYING.LIB
