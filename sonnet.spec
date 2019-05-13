@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : sonnet
-Version  : 5.57.0
-Release  : 17
-URL      : https://download.kde.org/stable/frameworks/5.57/sonnet-5.57.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.57/sonnet-5.57.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.57/sonnet-5.57.0.tar.xz.sig
+Version  : 5.58.0
+Release  : 18
+URL      : https://download.kde.org/stable/frameworks/5.58/sonnet-5.58.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.58/sonnet-5.58.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.58/sonnet-5.58.0.tar.xz.sig
 Summary  : Spelling framework for Qt5
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -62,6 +62,7 @@ Requires: sonnet-bin = %{version}-%{release}
 Requires: sonnet-data = %{version}-%{release}
 Provides: sonnet-devel = %{version}-%{release}
 Requires: sonnet = %{version}-%{release}
+Requires: sonnet = %{version}-%{release}
 
 %description dev
 dev components for the sonnet package.
@@ -86,14 +87,14 @@ license components for the sonnet package.
 
 
 %prep
-%setup -q -n sonnet-5.57.0
+%setup -q -n sonnet-5.58.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557048788
+export SOURCE_DATE_EPOCH=1557765263
 mkdir -p clr-build
 pushd clr-build
 export AR=gcc-ar
@@ -108,7 +109,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1557048788
+export SOURCE_DATE_EPOCH=1557765263
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/sonnet
 cp COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/COPYING.LIB
@@ -263,9 +264,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5SonnetCore.so.5
-/usr/lib64/libKF5SonnetCore.so.5.57.0
+/usr/lib64/libKF5SonnetCore.so.5.58.0
 /usr/lib64/libKF5SonnetUi.so.5
-/usr/lib64/libKF5SonnetUi.so.5.57.0
+/usr/lib64/libKF5SonnetUi.so.5.58.0
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_aspell.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_hunspell.so
 
