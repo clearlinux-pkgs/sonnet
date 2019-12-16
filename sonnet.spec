@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : sonnet
-Version  : 5.64.0
-Release  : 24
-URL      : https://download.kde.org/stable/frameworks/5.64/sonnet-5.64.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.64/sonnet-5.64.0.tar.xz
-Source1 : https://download.kde.org/stable/frameworks/5.64/sonnet-5.64.0.tar.xz.sig
+Version  : 5.65.0
+Release  : 25
+URL      : https://download.kde.org/stable/frameworks/5.65/sonnet-5.65.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.65/sonnet-5.65.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.65/sonnet-5.65.0.tar.xz.sig
 Summary  : Spelling framework for Qt5
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -62,7 +62,6 @@ Requires: sonnet-bin = %{version}-%{release}
 Requires: sonnet-data = %{version}-%{release}
 Provides: sonnet-devel = %{version}-%{release}
 Requires: sonnet = %{version}-%{release}
-Requires: sonnet = %{version}-%{release}
 
 %description dev
 dev components for the sonnet package.
@@ -87,17 +86,17 @@ license components for the sonnet package.
 
 
 %prep
-%setup -q -n sonnet-5.64.0
+%setup -q -n sonnet-5.65.0
+cd %{_builddir}/sonnet-5.65.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573368583
+export SOURCE_DATE_EPOCH=1576531389
 mkdir -p clr-build
 pushd clr-build
-# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -111,10 +110,10 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1573368583
+export SOURCE_DATE_EPOCH=1576531389
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/sonnet
-cp %{_builddir}/sonnet-5.64.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/sonnet-5.65.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -129,7 +128,6 @@ popd
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/kf5/sonnet/trigrams.map
 /usr/share/locale/af/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/ar/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/as/LC_MESSAGES/sonnet5_qt.qm
@@ -266,9 +264,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5SonnetCore.so.5
-/usr/lib64/libKF5SonnetCore.so.5.64.0
+/usr/lib64/libKF5SonnetCore.so.5.65.0
 /usr/lib64/libKF5SonnetUi.so.5
-/usr/lib64/libKF5SonnetUi.so.5.64.0
+/usr/lib64/libKF5SonnetUi.so.5.65.0
 /usr/lib64/qt5/plugins/designer/sonnetui5widgets.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_aspell.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_hunspell.so
