@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : sonnet
-Version  : 5.68.0
-Release  : 28
-URL      : https://download.kde.org/stable/frameworks/5.68/sonnet-5.68.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.68/sonnet-5.68.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.68/sonnet-5.68.0.tar.xz.sig
+Version  : 5.69.0
+Release  : 29
+URL      : https://download.kde.org/stable/frameworks/5.69/sonnet-5.69.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.69/sonnet-5.69.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.69/sonnet-5.69.0.tar.xz.sig
 Summary  : Spelling framework for Qt5
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -87,15 +87,15 @@ license components for the sonnet package.
 
 
 %prep
-%setup -q -n sonnet-5.68.0
-cd %{_builddir}/sonnet-5.68.0
+%setup -q -n sonnet-5.69.0
+cd %{_builddir}/sonnet-5.69.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584307254
+export SOURCE_DATE_EPOCH=1586896702
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -112,10 +112,10 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1584307254
+export SOURCE_DATE_EPOCH=1586896702
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/sonnet
-cp %{_builddir}/sonnet-5.68.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/sonnet-5.69.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -235,18 +235,22 @@ popd
 %defattr(-,root,root,-)
 /usr/include/KF5/SonnetCore/Sonnet/BackgroundChecker
 /usr/include/KF5/SonnetCore/Sonnet/GuessLanguage
+/usr/include/KF5/SonnetCore/Sonnet/Settings
 /usr/include/KF5/SonnetCore/Sonnet/Speller
 /usr/include/KF5/SonnetCore/sonnet/backgroundchecker.h
 /usr/include/KF5/SonnetCore/sonnet/guesslanguage.h
+/usr/include/KF5/SonnetCore/sonnet/settings.h
 /usr/include/KF5/SonnetCore/sonnet/sonnetcore_export.h
 /usr/include/KF5/SonnetCore/sonnet/speller.h
 /usr/include/KF5/SonnetUi/Sonnet/ConfigDialog
+/usr/include/KF5/SonnetUi/Sonnet/ConfigView
 /usr/include/KF5/SonnetUi/Sonnet/ConfigWidget
 /usr/include/KF5/SonnetUi/Sonnet/Dialog
 /usr/include/KF5/SonnetUi/Sonnet/DictionaryComboBox
 /usr/include/KF5/SonnetUi/Sonnet/Highlighter
 /usr/include/KF5/SonnetUi/Sonnet/SpellCheckDecorator
 /usr/include/KF5/SonnetUi/sonnet/configdialog.h
+/usr/include/KF5/SonnetUi/sonnet/configview.h
 /usr/include/KF5/SonnetUi/sonnet/configwidget.h
 /usr/include/KF5/SonnetUi/sonnet/dialog.h
 /usr/include/KF5/SonnetUi/sonnet/dictionarycombobox.h
@@ -266,9 +270,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5SonnetCore.so.5
-/usr/lib64/libKF5SonnetCore.so.5.68.0
+/usr/lib64/libKF5SonnetCore.so.5.69.0
 /usr/lib64/libKF5SonnetUi.so.5
-/usr/lib64/libKF5SonnetUi.so.5.68.0
+/usr/lib64/libKF5SonnetUi.so.5.69.0
 /usr/lib64/qt5/plugins/designer/sonnetui5widgets.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_aspell.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_hunspell.so
