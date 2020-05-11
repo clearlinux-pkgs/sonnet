@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : sonnet
-Version  : 5.69.0
-Release  : 29
-URL      : https://download.kde.org/stable/frameworks/5.69/sonnet-5.69.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.69/sonnet-5.69.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.69/sonnet-5.69.0.tar.xz.sig
+Version  : 5.70.0
+Release  : 30
+URL      : https://download.kde.org/stable/frameworks/5.70/sonnet-5.70.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.70/sonnet-5.70.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.70/sonnet-5.70.0.tar.xz.sig
 Summary  : Spelling framework for Qt5
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -21,10 +21,12 @@ BuildRequires : aspell-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
 BuildRequires : buildreq-qmake
+BuildRequires : extra-cmake-modules-data
 BuildRequires : hunspell-dev
 BuildRequires : pkg-config
 BuildRequires : pkgconfig(enchant)
 BuildRequires : pkgconfig(hunspell)
+BuildRequires : qtbase-dev
 BuildRequires : qtbase-dev mesa-dev
 BuildRequires : zlib-dev
 
@@ -62,7 +64,6 @@ Requires: sonnet-bin = %{version}-%{release}
 Requires: sonnet-data = %{version}-%{release}
 Provides: sonnet-devel = %{version}-%{release}
 Requires: sonnet = %{version}-%{release}
-Requires: sonnet = %{version}-%{release}
 
 %description dev
 dev components for the sonnet package.
@@ -87,35 +88,34 @@ license components for the sonnet package.
 
 
 %prep
-%setup -q -n sonnet-5.69.0
-cd %{_builddir}/sonnet-5.69.0
+%setup -q -n sonnet-5.70.0
+cd %{_builddir}/sonnet-5.70.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586896702
+export SOURCE_DATE_EPOCH=1589210058
 mkdir -p clr-build
 pushd clr-build
-# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %cmake ..
 make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1586896702
+export SOURCE_DATE_EPOCH=1589210058
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/sonnet
-cp %{_builddir}/sonnet-5.69.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/sonnet-5.70.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/sonnet/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -270,9 +270,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5SonnetCore.so.5
-/usr/lib64/libKF5SonnetCore.so.5.69.0
+/usr/lib64/libKF5SonnetCore.so.5.70.0
 /usr/lib64/libKF5SonnetUi.so.5
-/usr/lib64/libKF5SonnetUi.so.5.69.0
+/usr/lib64/libKF5SonnetUi.so.5.70.0
 /usr/lib64/qt5/plugins/designer/sonnetui5widgets.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_aspell.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_hunspell.so
