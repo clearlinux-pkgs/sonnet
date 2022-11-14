@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : sonnet
-Version  : 5.99.0
-Release  : 55
-URL      : https://download.kde.org/stable/frameworks/5.99/sonnet-5.99.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.99/sonnet-5.99.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.99/sonnet-5.99.0.tar.xz.sig
+Version  : 5.100.0
+Release  : 56
+URL      : https://download.kde.org/stable/frameworks/5.100/sonnet-5.100.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.100/sonnet-5.100.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.100/sonnet-5.100.0.tar.xz.sig
 Summary  : Spelling framework for Qt5
 Group    : Development/Tools
 License  : BSD-3-Clause CC0-1.0 LGPL-2.0 LGPL-2.1
@@ -87,15 +87,15 @@ license components for the sonnet package.
 
 
 %prep
-%setup -q -n sonnet-5.99.0
-cd %{_builddir}/sonnet-5.99.0
+%setup -q -n sonnet-5.100.0
+cd %{_builddir}/sonnet-5.100.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1665413202
+export SOURCE_DATE_EPOCH=1668440391
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -111,7 +111,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1665413202
+export SOURCE_DATE_EPOCH=1668440391
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/sonnet
 cp %{_builddir}/sonnet-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/sonnet/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c || :
@@ -135,7 +135,6 @@ popd
 /usr/share/locale/af/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/ar/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/as/LC_MESSAGES/sonnet5_qt.qm
-/usr/share/locale/ast/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/az/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/be/LC_MESSAGES/sonnet5_qt.qm
 /usr/share/locale/be@latin/LC_MESSAGES/sonnet5_qt.qm
@@ -275,9 +274,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5SonnetCore.so.5
-/usr/lib64/libKF5SonnetCore.so.5.99.0
+/usr/lib64/libKF5SonnetCore.so.5.100.0
 /usr/lib64/libKF5SonnetUi.so.5
-/usr/lib64/libKF5SonnetUi.so.5.99.0
+/usr/lib64/libKF5SonnetUi.so.5.100.0
 /usr/lib64/qt5/plugins/designer/sonnetui5widgets.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_aspell.so
 /usr/lib64/qt5/plugins/kf5/sonnet/sonnet_hunspell.so
