@@ -1,5 +1,5 @@
 PKG_NAME := sonnet
-URL = https://download.kde.org/stable/frameworks/5.109/sonnet-5.109.0.tar.xz
+URL = https://download.kde.org/stable/frameworks/5.110/sonnet-5.110.0.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
