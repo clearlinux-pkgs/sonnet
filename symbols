@@ -1,374 +1,109 @@
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::wordBreaks(QString const&)
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::sentenceBreaks(QString const&)
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::setText(QString const&)
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::TextBreaks(QString const&)
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::TextBreaks(QString const&)
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::~TextBreaks()
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::~TextBreaks()
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::~TextBreaks()
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setModified(bool)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::addWordToIgnore(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setDefaultClient(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setCheckUppercase(bool)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setDefaultLanguage(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setSkipRunTogether(bool)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setCurrentIgnoreList(QList<QString> const&)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setAutodetectLanguage(bool)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setPreferredLanguages(QList<QString> const&)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setCheckerEnabledByDefault(bool)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setBackgroundCheckerEnabled(bool)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::save()
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::ignore(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::restore()
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::~SettingsImpl()
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::~SettingsImpl()
-libKF6SonnetCore.so.6:Sonnet::GuessLanguage::setLimits(int, double)
-libKF6SonnetCore.so.6:Sonnet::GuessLanguage::GuessLanguage()
-libKF6SonnetCore.so.6:Sonnet::GuessLanguage::GuessLanguage()
-libKF6SonnetCore.so.6:Sonnet::GuessLanguage::~GuessLanguage()
-libKF6SonnetCore.so.6:Sonnet::GuessLanguage::~GuessLanguage()
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::SpellerPlugin(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::SpellerPlugin(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::~SpellerPlugin()
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::~SpellerPlugin()
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::~SpellerPlugin()
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::setIgnoreUppercase(bool)
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::next()
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::replace(int, int, QString const&)
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::setBuffer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::WordTokenizer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::WordTokenizer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::~WordTokenizer()
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::~WordTokenizer()
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::~WordTokenizer()
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::next()
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::replace(int, int, QString const&)
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::setBuffer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::LanguageFilter(Sonnet::AbstractTokenizer*)
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::LanguageFilter(Sonnet::LanguageFilter const&)
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::LanguageFilter(Sonnet::AbstractTokenizer*)
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::LanguageFilter(Sonnet::LanguageFilter const&)
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::~LanguageFilter()
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::~LanguageFilter()
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::~LanguageFilter()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::setSpeller(Sonnet::Speller const&)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::misspelling(QString const&, int)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::qt_metacast(char const*)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::fetchMoreText()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::changeLanguage(QString const&)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::slotEngineDone()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::addWordToSession(QString const&)
+libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::BackgroundChecker(QObject*)
 libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::continueChecking()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::addWordToPersonal(QString const&)
+libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::done()
+libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::fetchMoreText()
 libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::finishedCurrentFeed()
 libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::setAutoDetectLanguageDisabled(bool)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::done()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::stop()
+libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::slotEngineDone()
 libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::start()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::replace(int, QString const&, QString const&)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::setText(QString const&)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::checkWord(QString const&)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::BackgroundChecker(QObject*)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::BackgroundChecker(Sonnet::Speller const&, QObject*)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::BackgroundChecker(QObject*)
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::BackgroundChecker(Sonnet::Speller const&, QObject*)
+libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::stop()
 libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::~BackgroundChecker()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::~BackgroundChecker()
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::~BackgroundChecker()
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::next()
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::replace(int, int, QString const&)
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::setBuffer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::SentenceTokenizer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::SentenceTokenizer(QString const&)
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::~SentenceTokenizer()
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::~SentenceTokenizer()
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::~SentenceTokenizer()
-libKF6SonnetCore.so.6:Sonnet::Client::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetCore.so.6:Sonnet::Client::qt_metacast(char const*)
 libKF6SonnetCore.so.6:Sonnet::Client::Client(QObject*)
-libKF6SonnetCore.so.6:Sonnet::Client::Client(QObject*)
-libKF6SonnetCore.so.6:Sonnet::Loader::openLoader()
-libKF6SonnetCore.so.6:Sonnet::Loader::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetCore.so.6:Sonnet::Loader::qt_metacast(char const*)
-libKF6SonnetCore.so.6:Sonnet::Loader::cachedSpeller(QString const&)
+libKF6SonnetCore.so.6:Sonnet::GuessLanguage::GuessLanguage()
+libKF6SonnetCore.so.6:Sonnet::GuessLanguage::~GuessLanguage()
+libKF6SonnetCore.so.6:Sonnet::LanguageFilter::LanguageFilter(Sonnet::AbstractTokenizer*)
+libKF6SonnetCore.so.6:Sonnet::LanguageFilter::next()
+libKF6SonnetCore.so.6:Sonnet::LanguageFilter::~LanguageFilter()
+libKF6SonnetCore.so.6:Sonnet::Loader::Loader()
+libKF6SonnetCore.so.6:Sonnet::Loader::changed()
 libKF6SonnetCore.so.6:Sonnet::Loader::clearSpellerCache()
 libKF6SonnetCore.so.6:Sonnet::Loader::configurationChanged()
-libKF6SonnetCore.so.6:Sonnet::Loader::changed()
-libKF6SonnetCore.so.6:Sonnet::Loader::Loader()
-libKF6SonnetCore.so.6:Sonnet::Loader::Loader()
+libKF6SonnetCore.so.6:Sonnet::Loader::openLoader()
 libKF6SonnetCore.so.6:Sonnet::Loader::~Loader()
-libKF6SonnetCore.so.6:Sonnet::Loader::~Loader()
-libKF6SonnetCore.so.6:Sonnet::Loader::~Loader()
-libKF6SonnetCore.so.6:Sonnet::Speller::setLanguage(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::addToSession(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::setAttribute(Sonnet::Speller::Attribute, bool)
-libKF6SonnetCore.so.6:Sonnet::Speller::addToPersonal(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::setDefaultClient(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::storeReplacement(QString const&, QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::setDefaultLanguage(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::save()
-libKF6SonnetCore.so.6:Sonnet::Speller::restore()
-libKF6SonnetCore.so.6:Sonnet::Speller::Speller(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::Speller(Sonnet::Speller const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::Speller(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::Speller(Sonnet::Speller const&)
-libKF6SonnetCore.so.6:Sonnet::Speller::~Speller()
-libKF6SonnetCore.so.6:Sonnet::Speller::~Speller()
-libKF6SonnetCore.so.6:Sonnet::Speller::operator=(Sonnet::Speller const&)
-libKF6SonnetCore.so.6:Sonnet::Settings::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetCore.so.6:Sonnet::Settings::qt_metacast(char const*)
+libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::next()
+libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::~SentenceTokenizer()
+libKF6SonnetCore.so.6:Sonnet::Settings::Settings(QObject*)
+libKF6SonnetCore.so.6:Sonnet::Settings::autodetectLanguageChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::backgroundCheckerEnabledChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::checkerEnabledByDefaultChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::currentIgnoreListChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::defauktSkipRunTogether()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultAutodetectLanguage()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultBackgroundCheckerEnabled()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultCheckerEnabledByDefault()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultClientChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultDefaultLanguage()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultIgnoreList()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultLanguageChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultPreferredLanguages()
+libKF6SonnetCore.so.6:Sonnet::Settings::defaultSkipUppercase()
 libKF6SonnetCore.so.6:Sonnet::Settings::dictionaryModel()
 libKF6SonnetCore.so.6:Sonnet::Settings::modifiedChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::setDefaultClient(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Settings::setSkipUppercase(bool)
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultIgnoreList()
-libKF6SonnetCore.so.6:Sonnet::Settings::setDefaultLanguage(QString const&)
-libKF6SonnetCore.so.6:Sonnet::Settings::setSkipRunTogether(bool)
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultClientChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultSkipUppercase()
-libKF6SonnetCore.so.6:Sonnet::Settings::setCurrentIgnoreList(QList<QString> const&)
-libKF6SonnetCore.so.6:Sonnet::Settings::skipUppercaseChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::setAutodetectLanguage(bool)
-libKF6SonnetCore.so.6:Sonnet::Settings::setPreferredLanguages(QList<QString> const&)
-libKF6SonnetCore.so.6:Sonnet::Settings::defauktSkipRunTogether()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultDefaultLanguage()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultLanguageChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::skipRunTogetherChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::currentIgnoreListChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::autodetectLanguageChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultAutodetectLanguage()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultPreferredLanguages()
 libKF6SonnetCore.so.6:Sonnet::Settings::preferredLanguagesChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::setCheckerEnabledByDefault(bool)
-libKF6SonnetCore.so.6:Sonnet::Settings::setBackgroundCheckerEnabled(bool)
-libKF6SonnetCore.so.6:Sonnet::Settings::checkerEnabledByDefaultChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultCheckerEnabledByDefault()
-libKF6SonnetCore.so.6:Sonnet::Settings::backgroundCheckerEnabledChanged()
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultBackgroundCheckerEnabled()
 libKF6SonnetCore.so.6:Sonnet::Settings::save()
-libKF6SonnetCore.so.6:Sonnet::Settings::Settings(QObject*)
-libKF6SonnetCore.so.6:Sonnet::Settings::Settings(QObject*)
+libKF6SonnetCore.so.6:Sonnet::Settings::setAutodetectLanguage(bool)
+libKF6SonnetCore.so.6:Sonnet::Settings::setBackgroundCheckerEnabled(bool)
+libKF6SonnetCore.so.6:Sonnet::Settings::setCheckerEnabledByDefault(bool)
+libKF6SonnetCore.so.6:Sonnet::Settings::setSkipRunTogether(bool)
+libKF6SonnetCore.so.6:Sonnet::Settings::setSkipUppercase(bool)
+libKF6SonnetCore.so.6:Sonnet::Settings::skipRunTogetherChanged()
+libKF6SonnetCore.so.6:Sonnet::Settings::skipUppercaseChanged()
 libKF6SonnetCore.so.6:Sonnet::Settings::~Settings()
-libKF6SonnetCore.so.6:Sonnet::Settings::~Settings()
-libKF6SonnetCore.so.6:Sonnet::Settings::~Settings()
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::wordBreaks() const
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::sentenceBreaks() const
-libKF6SonnetCore.so.6:Sonnet::TextBreaks::text() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::defaultClient() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::checkUppercase() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::defaultLanguage() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::skipRunTogether() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::currentIgnoreList() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::autodetectLanguage() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::preferredLanguages() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::disableWordErrorCount() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::checkerEnabledByDefault() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::backgroundCheckerEnabled() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::disablePercentageWordError() const
-libKF6SonnetCore.so.6:Sonnet::SettingsImpl::modified() const
-libKF6SonnetCore.so.6:Sonnet::GuessLanguage::identify(QString const&, QList<QString> const&) const
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::isMisspelled(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::checkAndSuggest(QString const&, QList<QString>&) const
-libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::language() const
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::isSpellcheckable() const
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::buffer() const
-libKF6SonnetCore.so.6:Sonnet::WordTokenizer::hasNext() const
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::isSpellcheckable() const
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::buffer() const
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::hasNext() const
-libKF6SonnetCore.so.6:Sonnet::LanguageFilter::language() const
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::metaObject() const
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::currentContext() const
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::autoDetectLanguageDisabled() const
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::text() const
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::speller() const
-libKF6SonnetCore.so.6:Sonnet::BackgroundChecker::suggest(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::buffer() const
-libKF6SonnetCore.so.6:Sonnet::SentenceTokenizer::hasNext() const
-libKF6SonnetCore.so.6:Sonnet::Client::metaObject() const
-libKF6SonnetCore.so.6:Sonnet::Loader::metaObject() const
-libKF6SonnetCore.so.6:Sonnet::Loader::createSpeller(QString const&, QString const&) const
-libKF6SonnetCore.so.6:Sonnet::Loader::languageNames() const
-libKF6SonnetCore.so.6:Sonnet::Loader::languageNameForCode(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::Loader::loadingDictionaryFailed(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::Loader::clients() const
-libKF6SonnetCore.so.6:Sonnet::Loader::settings() const
-libKF6SonnetCore.so.6:Sonnet::Loader::languages() const
-libKF6SonnetCore.so.6:Sonnet::Speller::isMisspelled(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::Speller::defaultClient() const
-libKF6SonnetCore.so.6:Sonnet::Speller::testAttribute(Sonnet::Speller::Attribute) const
-libKF6SonnetCore.so.6:Sonnet::Speller::checkAndSuggest(QString const&, QList<QString>&) const
-libKF6SonnetCore.so.6:Sonnet::Speller::defaultLanguage() const
-libKF6SonnetCore.so.6:Sonnet::Speller::availableBackends() const
-libKF6SonnetCore.so.6:Sonnet::Speller::availableLanguages() const
-libKF6SonnetCore.so.6:Sonnet::Speller::availableDictionaries() const
-libKF6SonnetCore.so.6:Sonnet::Speller::preferredDictionaries() const
-libKF6SonnetCore.so.6:Sonnet::Speller::availableLanguageNames() const
-libKF6SonnetCore.so.6:Sonnet::Speller::isValid() const
-libKF6SonnetCore.so.6:Sonnet::Speller::suggest(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::Speller::language() const
-libKF6SonnetCore.so.6:Sonnet::Speller::isCorrect(QString const&) const
-libKF6SonnetCore.so.6:Sonnet::Settings::metaObject() const
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultClient() const
-libKF6SonnetCore.so.6:Sonnet::Settings::skipUppercase() const
-libKF6SonnetCore.so.6:Sonnet::Settings::defaultLanguage() const
-libKF6SonnetCore.so.6:Sonnet::Settings::skipRunTogether() const
-libKF6SonnetCore.so.6:Sonnet::Settings::currentIgnoreList() const
-libKF6SonnetCore.so.6:Sonnet::Settings::autodetectLanguage() const
-libKF6SonnetCore.so.6:Sonnet::Settings::preferredLanguages() const
-libKF6SonnetCore.so.6:Sonnet::Settings::checkerEnabledByDefault() const
-libKF6SonnetCore.so.6:Sonnet::Settings::backgroundCheckerEnabled() const
-libKF6SonnetCore.so.6:Sonnet::Settings::clients() const
-libKF6SonnetCore.so.6:Sonnet::Settings::modified() const
-libKF6SonnetUi.so.6:Sonnet::ConfigView::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::setLanguage(QString const&)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::configChanged()
-libKF6SonnetUi.so.6:Sonnet::ConfigView::setIgnoreList(QList<QString> const&)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::setPreferredLanguages(QList<QString> const&)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::setNoBackendFoundVisible(bool)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::setBackgroundCheckingButtonShown(bool)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::ConfigView(QWidget*)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::ConfigView(QWidget*)
-libKF6SonnetUi.so.6:Sonnet::ConfigView::~ConfigView()
-libKF6SonnetUi.so.6:Sonnet::ConfigView::~ConfigView()
-libKF6SonnetUi.so.6:Sonnet::ConfigView::~ConfigView()
-libKF6SonnetUi.so.6:Sonnet::Highlighter::ignoreWord(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::eventFilter(QObject*, QEvent*)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setDocument(QTextDocument*)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setAutomatic(bool)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::activeChanged(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setMisspelled(int, int)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::highlightBlock(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::slotRehighlight()
-libKF6SonnetUi.so.6:Sonnet::Highlighter::unsetMisspelled(int, int)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::isWordMisspelled(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::slotAutoDetection()
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setCurrentLanguage(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setMisspelledColor(QColor const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::suggestionsForWord(QString const&, QTextCursor const&, int)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::suggestionsForWord(QString const&, int)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::addWordToDictionary(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setIntraWordEditing(bool)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setAutoDetectLanguageDisabled(bool)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::setActive(bool)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::Highlighter(QPlainTextEdit*, QColor const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::Highlighter(QTextEdit*, QColor const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::Highlighter(QPlainTextEdit*, QColor const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::Highlighter(QTextEdit*, QColor const&)
-libKF6SonnetUi.so.6:Sonnet::Highlighter::~Highlighter()
-libKF6SonnetUi.so.6:Sonnet::Highlighter::~Highlighter()
-libKF6SonnetUi.so.6:Sonnet::Highlighter::~Highlighter()
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::setLanguage(QString const&)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::restore()
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::save()
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setAutodetectLanguage(bool)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setBackgroundCheckerEnabled(bool)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setCheckUppercase(bool)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setCheckerEnabledByDefault(bool)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setModified(bool)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::setSkipRunTogether(bool)
+libKF6SonnetCore.so.6:Sonnet::SettingsImpl::~SettingsImpl()
+libKF6SonnetCore.so.6:Sonnet::Speller::restore()
+libKF6SonnetCore.so.6:Sonnet::Speller::save()
+libKF6SonnetCore.so.6:Sonnet::Speller::~Speller()
+libKF6SonnetCore.so.6:Sonnet::SpellerPlugin::~SpellerPlugin()
+libKF6SonnetCore.so.6:Sonnet::TextBreaks::~TextBreaks()
+libKF6SonnetCore.so.6:Sonnet::WordTokenizer::next()
+libKF6SonnetCore.so.6:Sonnet::WordTokenizer::setIgnoreUppercase(bool)
+libKF6SonnetCore.so.6:Sonnet::WordTokenizer::~WordTokenizer()
+libKF6SonnetUi.so.6:Sonnet::ConfigDialog::ConfigDialog(QWidget*)
 libKF6SonnetUi.so.6:Sonnet::ConfigDialog::configChanged()
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::languageChanged(QString const&)
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::slotOk()
 libKF6SonnetUi.so.6:Sonnet::ConfigDialog::slotApply()
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::ConfigDialog(QWidget*)
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::ConfigDialog(QWidget*)
+libKF6SonnetUi.so.6:Sonnet::ConfigDialog::slotOk()
 libKF6SonnetUi.so.6:Sonnet::ConfigDialog::~ConfigDialog()
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::~ConfigDialog()
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::~ConfigDialog()
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::setLanguage(QString const&)
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::slotDefault()
+libKF6SonnetUi.so.6:Sonnet::ConfigView::ConfigView(QWidget*)
+libKF6SonnetUi.so.6:Sonnet::ConfigView::configChanged()
+libKF6SonnetUi.so.6:Sonnet::ConfigView::setBackgroundCheckingButtonShown(bool)
+libKF6SonnetUi.so.6:Sonnet::ConfigView::setNoBackendFoundVisible(bool)
+libKF6SonnetUi.so.6:Sonnet::ConfigView::~ConfigView()
+libKF6SonnetUi.so.6:Sonnet::ConfigWidget::ConfigWidget(QWidget*)
 libKF6SonnetUi.so.6:Sonnet::ConfigWidget::configChanged()
+libKF6SonnetUi.so.6:Sonnet::ConfigWidget::save()
+libKF6SonnetUi.so.6:Sonnet::ConfigWidget::setBackgroundCheckingButtonShown(bool)
+libKF6SonnetUi.so.6:Sonnet::ConfigWidget::slotDefault()
 libKF6SonnetUi.so.6:Sonnet::ConfigWidget::slotIgnoreWordAdded()
 libKF6SonnetUi.so.6:Sonnet::ConfigWidget::slotIgnoreWordRemoved()
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::setBackgroundCheckingButtonShown(bool)
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::save()
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::ConfigWidget(QWidget*)
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::ConfigWidget(QWidget*)
 libKF6SonnetUi.so.6:Sonnet::ConfigWidget::~ConfigWidget()
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::~ConfigWidget()
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::~ConfigWidget()
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::reloadCombo()
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::dictionaryChanged(QString const&)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::assignByDictionnary(QString const&)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::assignDictionnaryName(QString const&)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::dictionaryNameChanged(QString const&)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::setCurrentByDictionary(QString const&)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::setCurrentByDictionaryName(QString const&)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::DictionaryComboBox(QWidget*)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::DictionaryComboBox(QWidget*)
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::~DictionaryComboBox()
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::~DictionaryComboBox()
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::~DictionaryComboBox()
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::eventFilter(QObject*, QEvent*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::setHighlighter(Sonnet::Highlighter*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::SpellCheckDecorator(QPlainTextEdit*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::SpellCheckDecorator(QTextEdit*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::SpellCheckDecorator(QPlainTextEdit*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::SpellCheckDecorator(QTextEdit*)
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::~SpellCheckDecorator()
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::~SpellCheckDecorator()
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::~SpellCheckDecorator()
-libKF6SonnetUi.so.6:Sonnet::Dialog::autoCorrect(QString const&, QString const&)
-libKF6SonnetUi.so.6:Sonnet::Dialog::misspelling(QString const&, int)
-libKF6SonnetUi.so.6:Sonnet::Dialog::qt_metacall(QMetaObject::Call, int, void**)
-libKF6SonnetUi.so.6:Sonnet::Dialog::qt_metacast(char const*)
-libKF6SonnetUi.so.6:Sonnet::Dialog::spellCheckDone(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Dialog::languageChanged(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Dialog::spellCheckStatus(QString const&)
 libKF6SonnetUi.so.6:Sonnet::Dialog::activeAutoCorrect(bool)
-libKF6SonnetUi.so.6:Sonnet::Dialog::showProgressDialog(int)
-libKF6SonnetUi.so.6:Sonnet::Dialog::showSpellCheckCompletionMessage(bool)
+libKF6SonnetUi.so.6:Sonnet::Dialog::cancel()
 libKF6SonnetUi.so.6:Sonnet::Dialog::setSpellCheckContinuedAfterReplacement(bool)
 libKF6SonnetUi.so.6:Sonnet::Dialog::show()
+libKF6SonnetUi.so.6:Sonnet::Dialog::showProgressDialog(int)
+libKF6SonnetUi.so.6:Sonnet::Dialog::showSpellCheckCompletionMessage(bool)
 libKF6SonnetUi.so.6:Sonnet::Dialog::stop()
-libKF6SonnetUi.so.6:Sonnet::Dialog::cancel()
-libKF6SonnetUi.so.6:Sonnet::Dialog::replace(QString const&, int, QString const&)
-libKF6SonnetUi.so.6:Sonnet::Dialog::setBuffer(QString const&)
-libKF6SonnetUi.so.6:Sonnet::Dialog::Dialog(Sonnet::BackgroundChecker*, QWidget*)
-libKF6SonnetUi.so.6:Sonnet::Dialog::Dialog(Sonnet::BackgroundChecker*, QWidget*)
 libKF6SonnetUi.so.6:Sonnet::Dialog::~Dialog()
-libKF6SonnetUi.so.6:Sonnet::Dialog::~Dialog()
-libKF6SonnetUi.so.6:Sonnet::Dialog::~Dialog()
-libKF6SonnetUi.so.6:Sonnet::ConfigView::ignoreList() const
-libKF6SonnetUi.so.6:Sonnet::ConfigView::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::ConfigView::preferredLanguages() const
-libKF6SonnetUi.so.6:Sonnet::ConfigView::noBackendFoundVisible() const
-libKF6SonnetUi.so.6:Sonnet::ConfigView::backgroundCheckingButtonShown() const
-libKF6SonnetUi.so.6:Sonnet::ConfigView::language() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::currentLanguage() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::intraWordEditing() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::spellCheckerFound() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::checkerEnabledByDefault() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::autoDetectLanguageDisabled() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::isActive() const
-libKF6SonnetUi.so.6:Sonnet::Highlighter::automatic() const
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::ConfigDialog::language() const
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::backgroundCheckingButtonShown() const
-libKF6SonnetUi.so.6:Sonnet::ConfigWidget::language() const
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::currentDictionary() const
-libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::currentDictionaryName() const
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::highlighter() const
-libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::isSpellCheckingEnabledForBlock(QString const&) const
-libKF6SonnetUi.so.6:Sonnet::Dialog::metaObject() const
-libKF6SonnetUi.so.6:Sonnet::Dialog::originalBuffer() const
-libKF6SonnetUi.so.6:Sonnet::Dialog::buffer() const
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::ConfigView::~ConfigView()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::ConfigView::~ConfigView()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::ConfigDialog::~ConfigDialog()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::ConfigDialog::~ConfigDialog()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::ConfigWidget::~ConfigWidget()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::ConfigWidget::~ConfigWidget()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::DictionaryComboBox::~DictionaryComboBox()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::DictionaryComboBox::~DictionaryComboBox()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::Dialog::~Dialog()
-libKF6SonnetUi.so.6:non-virtual thunk to Sonnet::Dialog::~Dialog()
+libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::DictionaryComboBox(QWidget*)
+libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::reloadCombo()
+libKF6SonnetUi.so.6:Sonnet::DictionaryComboBox::~DictionaryComboBox()
+libKF6SonnetUi.so.6:Sonnet::Highlighter::setActive(bool)
+libKF6SonnetUi.so.6:Sonnet::Highlighter::setAutoDetectLanguageDisabled(bool)
+libKF6SonnetUi.so.6:Sonnet::Highlighter::setAutomatic(bool)
+libKF6SonnetUi.so.6:Sonnet::Highlighter::setDocument(QTextDocument*)
+libKF6SonnetUi.so.6:Sonnet::Highlighter::setIntraWordEditing(bool)
+libKF6SonnetUi.so.6:Sonnet::Highlighter::slotAutoDetection()
+libKF6SonnetUi.so.6:Sonnet::Highlighter::slotRehighlight()
+libKF6SonnetUi.so.6:Sonnet::Highlighter::~Highlighter()
+libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::SpellCheckDecorator(QPlainTextEdit*)
+libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::SpellCheckDecorator(QTextEdit*)
+libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::setHighlighter(Sonnet::Highlighter*)
+libKF6SonnetUi.so.6:Sonnet::SpellCheckDecorator::~SpellCheckDecorator()
